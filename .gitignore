@@ -1,0 +1,8 @@
+/.idea
+/.vscode
+/vendor
+/docs
+.phpunit.result.cache
+composer.lock
+phpunit.xml
+scratch.md
