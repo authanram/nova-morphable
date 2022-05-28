@@ -47,6 +47,7 @@ class Targetable extends Resource
             self::fieldId(),
             ...self::morphableFields($request),
             ...self::targetableFields($request),
+            ...config('nova-morphable.fields', static fn () => [])($request, $this->resource),
         ];
     }
 
