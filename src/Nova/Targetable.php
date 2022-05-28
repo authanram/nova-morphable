@@ -66,6 +66,7 @@ class Targetable extends Resource
         return [
             MorphTo::make(__('Type'), 'morphable')
                 ->types($resources)
+                ->withoutTrashed()
                 ->showCreateRelationButton(),
         ];
     }
@@ -81,6 +82,7 @@ class Targetable extends Resource
         return [
             MorphTo::make(__('Type'), 'targetable')
                 ->types($resources)
+                ->withoutTrashed()
                 ->showCreateRelationButton(),
         ];
     }
